@@ -13,7 +13,7 @@ flavors:
     serialization_format: cloudpickle
     sklearn_version: 1.3.2
 mlflow_version: 2.7.1
-model_uuid: 86754750e7b540288e5d4f5c5f7cb721
+model_uuid: 52d30c02ddc744ebb30bfea37de7afe6
 saved_input_example_info:
   artifact_path: input_example.json
   pandas_orient: split
@@ -28,4 +28,4 @@ signature:
     "time_signature"}, {"type": "string", "name": "text_feature"}]'
   outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "object", "shape": [-1]}}]'
   params: null
-utc_time_created: '2023-10-30 07:23:58.186028'
+utc_time_created: '2023-10-30 15:44:54.091315'

@@ -1,0 +1,21 @@
+2023-10-30 22:39:33,348 INFO    StreamThr :4524 [internal.py:wandb_internal():86] W&B internal server running at pid: 4524, started at: 2023-10-30 22:39:33.348358
+2023-10-30 22:39:33,351 DEBUG   HandlerThread:4524 [handler.py:handle_request():146] handle_request: status
+2023-10-30 22:39:33,352 INFO    WriterThread:4524 [datastore.py:open_for_write():85] open: /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/download/wandb/run-20231030_223933-gpwhexfc/run-gpwhexfc.wandb
+2023-10-30 22:39:33,353 DEBUG   SenderThread:4524 [sender.py:send():380] send: header
+2023-10-30 22:39:33,357 DEBUG   SenderThread:4524 [sender.py:send():380] send: run
+2023-10-30 22:39:33,997 DEBUG   HandlerThread:4524 [handler.py:handle_request():146] handle_request: shutdown
+2023-10-30 22:39:33,997 INFO    HandlerThread:4524 [handler.py:finish():866] shutting down handler
+2023-10-30 22:39:34,205 INFO    SenderThread:4524 [dir_watcher.py:__init__():211] watching files in: /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/download/wandb/run-20231030_223933-gpwhexfc/files
+2023-10-30 22:39:34,205 INFO    SenderThread:4524 [sender.py:_start_run_threads():1122] run started: gpwhexfc with start time 1698680373.348855
+2023-10-30 22:39:34,205 INFO    SenderThread:4524 [sender.py:finish():1534] shutting down sender
+2023-10-30 22:39:34,206 INFO    SenderThread:4524 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-10-30 22:39:34,351 WARNING StreamThr :4524 [internal.py:is_dead():414] Internal process exiting, parent pid 4514 disappeared
+2023-10-30 22:39:34,351 ERROR   StreamThr :4524 [internal.py:wandb_internal():152] Internal process shutdown.
+2023-10-30 22:39:34,357 INFO    WriterThread:4524 [datastore.py:close():294] close: /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/download/wandb/run-20231030_223933-gpwhexfc/run-gpwhexfc.wandb
+2023-10-30 22:39:35,206 INFO    SenderThread:4524 [dir_watcher.py:finish():388] scan: /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/download/wandb/run-20231030_223933-gpwhexfc/files
+2023-10-30 22:39:35,206 INFO    SenderThread:4524 [dir_watcher.py:finish():402] scan save: /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/download/wandb/run-20231030_223933-gpwhexfc/files/config.yaml config.yaml
+2023-10-30 22:39:35,207 INFO    SenderThread:4524 [file_pusher.py:finish():175] shutting down file pusher
+2023-10-30 22:39:35,207 INFO    SenderThread:4524 [file_pusher.py:join():181] waiting for file pusher
+2023-10-30 22:39:36,554 INFO    wandb-upload_0:4524 [upload_job.py:push():131] Uploaded file /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/download/wandb/run-20231030_223933-gpwhexfc/files/config.yaml
+2023-10-30 22:39:37,208 INFO    SenderThread:4524 [file_stream.py:finish():595] file stream finish called
+2023-10-30 22:39:37,634 INFO    SenderThread:4524 [file_stream.py:finish():599] file stream finish is done

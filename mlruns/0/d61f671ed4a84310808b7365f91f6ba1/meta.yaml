@@ -1,0 +1,15 @@
+artifact_uri: file:///home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_%20Release_Deploy/exercise14/genre_classification/mlruns/0/d61f671ed4a84310808b7365f91f6ba1/artifacts
+end_time: 1698680718318
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d61f671ed4a84310808b7365f91f6ba1
+run_name: likeable-fish-220
+run_uuid: d61f671ed4a84310808b7365f91f6ba1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698680675727
+status: 3
+tags: []
+user_id: prayat

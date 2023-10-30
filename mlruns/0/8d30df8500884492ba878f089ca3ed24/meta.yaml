@@ -1,0 +1,15 @@
+artifact_uri: file:///home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_%20Release_Deploy/exercise14/genre_classification/mlruns/0/8d30df8500884492ba878f089ca3ed24/artifacts
+end_time: 1698680444322
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8d30df8500884492ba878f089ca3ed24
+run_name: amusing-cat-547
+run_uuid: 8d30df8500884492ba878f089ca3ed24
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698680418307
+status: 3
+tags: []
+user_id: prayat

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_%20Release_Deploy/exercise14/genre_classification/mlruns/0/4348167a3fbb4d9a90e2ee6045c5aaeb/artifacts
+end_time: 1698680374255
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4348167a3fbb4d9a90e2ee6045c5aaeb
+run_name: able-dog-467
+run_uuid: 4348167a3fbb4d9a90e2ee6045c5aaeb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698680365246
+status: 4
+tags: []
+user_id: prayat
