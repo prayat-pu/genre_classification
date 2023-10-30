@@ -1,0 +1,15 @@
+artifact_uri: file:///home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_%20Release_Deploy/exercise14/genre_classification/mlruns/0/7d4854248e53484a8ecbc1e14a63763e/artifacts
+end_time: 1698648673015
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7d4854248e53484a8ecbc1e14a63763e
+run_name: classy-kit-66
+run_uuid: 7d4854248e53484a8ecbc1e14a63763e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698648655156
+status: 4
+tags: []
+user_id: prayat

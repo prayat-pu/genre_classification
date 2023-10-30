@@ -1,0 +1,97 @@
+{
+    "os": "Linux-5.15.0-87-generic-x86_64-with-glibc2.31",
+    "python": "3.11.6",
+    "heartbeatAt": "2023-10-30T06:57:51.259731",
+    "startedAt": "2023-10-30T06:57:50.088529",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "-s",
+        "-vv",
+        ".",
+        "--reference_artifact",
+        "prahyat/exercise_14/preprocessed_data.csv:latest",
+        "--sample_artifact",
+        "prahyat/exercise_14/processed_data.csv:latest",
+        "--ks_alpha",
+        "0.05"
+    ],
+    "state": "running",
+    "program": "/home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/bin/pytest",
+    "codePathLocal": null,
+    "git": {
+        "remote": "https://github.com/prayat-pu/genre_classification.git",
+        "commit": "d1cf1773b8ddf46c56a467bb420d6485146a2751"
+    },
+    "email": "bosssds65@gmail.com",
+    "root": "/home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification",
+    "host": "prayat-puangjaktha",
+    "username": "prayat",
+    "executable": "/home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/bin/python",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 1628.06475,
+        "min": 1600.0,
+        "max": 3800.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1600.0,
+            "min": 1600.0,
+            "max": 3800.0
+        },
+        {
+            "current": 1600.0,
+            "min": 1600.0,
+            "max": 3800.0
+        },
+        {
+            "current": 1700.0,
+            "min": 1600.0,
+            "max": 3800.0
+        },
+        {
+            "current": 1600.0,
+            "min": 1600.0,
+            "max": 3800.0
+        },
+        {
+            "current": 1724.518,
+            "min": 1600.0,
+            "max": 3800.0
+        },
+        {
+            "current": 1600.0,
+            "min": 1600.0,
+            "max": 3800.0
+        },
+        {
+            "current": 1600.0,
+            "min": 1600.0,
+            "max": 3800.0
+        },
+        {
+            "current": 1600.0,
+            "min": 1600.0,
+            "max": 3800.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 467.8895797729492,
+            "used": 51.571834564208984
+        }
+    },
+    "gpu": "NVIDIA GeForce GTX 960",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce GTX 960",
+            "memory_total": 2147483648
+        }
+    ],
+    "memory": {
+        "total": 7.715587615966797
+    }
+}

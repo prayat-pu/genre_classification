@@ -1,0 +1,232 @@
+2023-10-30 14:12:16,235 INFO    StreamThr :19566 [internal.py:wandb_internal():86] W&B internal server running at pid: 19566, started at: 2023-10-30 14:12:16.234618
+2023-10-30 14:12:16,236 DEBUG   HandlerThread:19566 [handler.py:handle_request():146] handle_request: status
+2023-10-30 14:12:16,238 INFO    WriterThread:19566 [datastore.py:open_for_write():85] open: /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/random_forest/wandb/run-20231030_141216-1q5t0vtq/run-1q5t0vtq.wandb
+2023-10-30 14:12:16,238 DEBUG   SenderThread:19566 [sender.py:send():380] send: header
+2023-10-30 14:12:16,241 DEBUG   SenderThread:19566 [sender.py:send():380] send: run
+2023-10-30 14:12:16,989 INFO    SenderThread:19566 [dir_watcher.py:__init__():211] watching files in: /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/random_forest/wandb/run-20231030_141216-1q5t0vtq/files
+2023-10-30 14:12:16,989 INFO    SenderThread:19566 [sender.py:_start_run_threads():1122] run started: 1q5t0vtq with start time 1698649936.234509
+2023-10-30 14:12:16,998 DEBUG   HandlerThread:19566 [handler.py:handle_request():146] handle_request: check_version
+2023-10-30 14:12:16,999 DEBUG   SenderThread:19566 [sender.py:send_request():407] send_request: check_version
+2023-10-30 14:12:17,115 DEBUG   HandlerThread:19566 [handler.py:handle_request():146] handle_request: run_start
+2023-10-30 14:12:17,149 DEBUG   HandlerThread:19566 [system_info.py:__init__():32] System info init
+2023-10-30 14:12:17,149 DEBUG   HandlerThread:19566 [system_info.py:__init__():47] System info init done
+2023-10-30 14:12:17,149 INFO    HandlerThread:19566 [system_monitor.py:start():194] Starting system monitor
+2023-10-30 14:12:17,150 INFO    SystemMonitor:19566 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-10-30 14:12:17,150 INFO    HandlerThread:19566 [system_monitor.py:probe():214] Collecting system info
+2023-10-30 14:12:17,152 INFO    SystemMonitor:19566 [interfaces.py:start():190] Started cpu monitoring
+2023-10-30 14:12:17,153 INFO    SystemMonitor:19566 [interfaces.py:start():190] Started disk monitoring
+2023-10-30 14:12:17,155 INFO    SystemMonitor:19566 [interfaces.py:start():190] Started gpu monitoring
+2023-10-30 14:12:17,155 INFO    SystemMonitor:19566 [interfaces.py:start():190] Started memory monitoring
+2023-10-30 14:12:17,156 INFO    SystemMonitor:19566 [interfaces.py:start():190] Started network monitoring
+2023-10-30 14:12:17,187 DEBUG   HandlerThread:19566 [system_info.py:probe():196] Probing system
+2023-10-30 14:12:17,190 DEBUG   HandlerThread:19566 [system_info.py:_probe_git():181] Probing git
+2023-10-30 14:12:17,197 DEBUG   HandlerThread:19566 [system_info.py:_probe_git():189] Probing git done
+2023-10-30 14:12:17,197 DEBUG   HandlerThread:19566 [system_info.py:probe():244] Probing system done
+2023-10-30 14:12:17,197 DEBUG   HandlerThread:19566 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-87-generic-x86_64-with-glibc2.31', 'python': '3.11.6', 'heartbeatAt': '2023-10-30T07:12:17.187870', 'startedAt': '2023-10-30T07:12:16.226466', 'docker': None, 'cuda': None, 'args': ('--train_data', 'processed_data_train.csv:latest', '--model_config', '/home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/outputs/2023-10-30/14-12-11/random_forest_config.yml', '--export_artifact', 'model_export', '--random_seed', '42', '--val_size', '0.3', '--stratify', 'genre'), 'state': 'running', 'program': '/home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/random_forest/run.py', 'codePathLocal': 'run.py', 'codePath': 'random_forest/run.py', 'git': {'remote': 'https://github.com/prayat-pu/genre_classification.git', 'commit': 'd1cf1773b8ddf46c56a467bb420d6485146a2751'}, 'email': 'bosssds65@gmail.com', 'root': '/home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification', 'host': 'prayat-puangjaktha', 'username': 'prayat', 'executable': '/home/prayat/miniconda3/envs/mlflow-a584de6a08384e1b08b232e05370f050c04467d8/bin/python', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 1633.44525, 'min': 1600.0, 'max': 3800.0}, 'cpu_freq_per_core': [{'current': 1600.0, 'min': 1600.0, 'max': 3800.0}, {'current': 1600.0, 'min': 1600.0, 'max': 3800.0}, {'current': 1600.0, 'min': 1600.0, 'max': 3800.0}, {'current': 1600.0, 'min': 1600.0, 'max': 3800.0}, {'current': 1700.0, 'min': 1600.0, 'max': 3800.0}, {'current': 1767.562, 'min': 1600.0, 'max': 3800.0}, {'current': 1600.0, 'min': 1600.0, 'max': 3800.0}, {'current': 1700.0, 'min': 1600.0, 'max': 3800.0}], 'disk': {'/': {'total': 467.8895797729492, 'used': 51.586631774902344}}, 'gpu': 'NVIDIA GeForce GTX 960', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce GTX 960', 'memory_total': 2147483648}], 'memory': {'total': 7.715587615966797}}
+2023-10-30 14:12:17,197 INFO    HandlerThread:19566 [system_monitor.py:probe():224] Finished collecting system info
+2023-10-30 14:12:17,197 INFO    HandlerThread:19566 [system_monitor.py:probe():227] Publishing system info
+2023-10-30 14:12:17,197 DEBUG   HandlerThread:19566 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-10-30 14:12:17,198 DEBUG   HandlerThread:19566 [system_info.py:_save_pip():68] Saving pip packages done
+2023-10-30 14:12:17,198 DEBUG   HandlerThread:19566 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2023-10-30 14:12:17,990 INFO    Thread-12 :19566 [dir_watcher.py:_on_file_created():271] file/dir created: /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/random_forest/wandb/run-20231030_141216-1q5t0vtq/files/requirements.txt
+2023-10-30 14:12:17,990 INFO    Thread-12 :19566 [dir_watcher.py:_on_file_created():271] file/dir created: /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/random_forest/wandb/run-20231030_141216-1q5t0vtq/files/conda-environment.yaml
+2023-10-30 14:12:22,411 DEBUG   HandlerThread:19566 [system_info.py:_save_conda():87] Saving conda packages done
+2023-10-30 14:12:22,412 INFO    HandlerThread:19566 [system_monitor.py:probe():229] Finished publishing system info
+2023-10-30 14:12:22,415 DEBUG   HandlerThread:19566 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 14:12:22,415 DEBUG   HandlerThread:19566 [handler.py:handle_request():146] handle_request: keepalive
+2023-10-30 14:12:22,416 DEBUG   SenderThread:19566 [sender.py:send():380] send: files
+2023-10-30 14:12:22,416 INFO    SenderThread:19566 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-10-30 14:12:22,423 DEBUG   HandlerThread:19566 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-30 14:12:22,424 DEBUG   HandlerThread:19566 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-30 14:12:22,424 DEBUG   SenderThread:19566 [sender.py:send_request():407] send_request: stop_status
+2023-10-30 14:12:22,897 DEBUG   SenderThread:19566 [sender.py:send():380] send: telemetry
+2023-10-30 14:12:22,991 INFO    Thread-12 :19566 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/random_forest/wandb/run-20231030_141216-1q5t0vtq/files/conda-environment.yaml
+2023-10-30 14:12:22,991 INFO    Thread-12 :19566 [dir_watcher.py:_on_file_created():271] file/dir created: /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/random_forest/wandb/run-20231030_141216-1q5t0vtq/files/wandb-metadata.json
+2023-10-30 14:12:22,991 INFO    Thread-12 :19566 [dir_watcher.py:_on_file_created():271] file/dir created: /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/random_forest/wandb/run-20231030_141216-1q5t0vtq/files/output.log
+2023-10-30 14:12:23,456 INFO    wandb-upload_0:19566 [upload_job.py:push():131] Uploaded file /tmp/tmplrb3ex9swandb/jh5ywwqw-wandb-metadata.json
+2023-10-30 14:12:23,979 DEBUG   SenderThread:19566 [sender.py:send():380] send: use_artifact
+2023-10-30 14:12:24,991 INFO    Thread-12 :19566 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/random_forest/wandb/run-20231030_141216-1q5t0vtq/files/output.log
+2023-10-30 14:12:25,125 DEBUG   SenderThread:19566 [sender.py:send():380] send: config
+2023-10-30 14:12:26,992 INFO    Thread-12 :19566 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/random_forest/wandb/run-20231030_141216-1q5t0vtq/files/output.log
+2023-10-30 14:12:27,126 DEBUG   HandlerThread:19566 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 14:12:29,122 DEBUG   SenderThread:19566 [sender.py:send_request():407] send_request: summary_record
+2023-10-30 14:12:29,124 INFO    SenderThread:19566 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-30 14:12:29,993 INFO    Thread-12 :19566 [dir_watcher.py:_on_file_created():271] file/dir created: /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/random_forest/wandb/run-20231030_141216-1q5t0vtq/files/wandb-summary.json
+2023-10-30 14:12:30,993 INFO    Thread-12 :19566 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/random_forest/wandb/run-20231030_141216-1q5t0vtq/files/output.log
+2023-10-30 14:12:31,799 DEBUG   HandlerThread:19566 [handler.py:handle_request():146] handle_request: log_artifact
+2023-10-30 14:12:31,800 DEBUG   SenderThread:19566 [sender.py:send_request():407] send_request: log_artifact
+2023-10-30 14:12:32,994 INFO    Thread-12 :19566 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/random_forest/wandb/run-20231030_141216-1q5t0vtq/files/output.log
+2023-10-30 14:12:34,224 INFO    wandb-upload_1:19566 [upload_job.py:push():89] Uploaded file /home/prayat/.local/share/wandb/artifacts/staging/tmpyvgs7x9u
+2023-10-30 14:12:34,227 INFO    wandb-upload_5:19566 [upload_job.py:push():89] Uploaded file /home/prayat/.local/share/wandb/artifacts/staging/tmppitilkm1
+2023-10-30 14:12:34,241 INFO    wandb-upload_4:19566 [upload_job.py:push():89] Uploaded file /home/prayat/.local/share/wandb/artifacts/staging/tmp1oknzpqv
+2023-10-30 14:12:34,242 INFO    wandb-upload_0:19566 [upload_job.py:push():89] Uploaded file /home/prayat/.local/share/wandb/artifacts/staging/tmptcy8dyw9
+2023-10-30 14:12:34,242 INFO    wandb-upload_2:19566 [upload_job.py:push():89] Uploaded file /home/prayat/.local/share/wandb/artifacts/staging/tmpffr8nwa0
+2023-10-30 14:12:37,425 DEBUG   HandlerThread:19566 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-30 14:12:37,425 DEBUG   HandlerThread:19566 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-30 14:12:38,338 INFO    wandb-upload_3:19566 [upload_job.py:push():89] Uploaded file /home/prayat/.local/share/wandb/artifacts/staging/tmpy6_jv4vq
+2023-10-30 14:12:39,520 INFO    SenderThread:19566 [sender.py:send_request_log_artifact():1444] logged artifact model_export - {'id': 'QXJ0aWZhY3Q6NjIxNjg3MTY2', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExMTEwMzc5Mw==', 'latestArtifact': None}}
+2023-10-30 14:12:39,520 DEBUG   SenderThread:19566 [sender.py:send_request():407] send_request: stop_status
+2023-10-30 14:12:39,522 DEBUG   HandlerThread:19566 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 14:12:43,289 DEBUG   SenderThread:19566 [sender.py:send():380] send: files
+2023-10-30 14:12:43,289 INFO    SenderThread:19566 [sender.py:_save_file():1378] saving file media/images/feature_importance_0_23d43a0ba030ddc63d52.png with policy now
+2023-10-30 14:12:43,334 DEBUG   HandlerThread:19566 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-30 14:12:43,336 DEBUG   SenderThread:19566 [sender.py:send():380] send: files
+2023-10-30 14:12:43,336 INFO    SenderThread:19566 [sender.py:_save_file():1378] saving file media/images/confusion_matrix_0_8eff2c9aef444d4fd3a2.png with policy now
+2023-10-30 14:12:43,337 DEBUG   SenderThread:19566 [sender.py:send():380] send: history
+2023-10-30 14:12:43,337 DEBUG   SenderThread:19566 [sender.py:send_request():407] send_request: summary_record
+2023-10-30 14:12:43,340 INFO    SenderThread:19566 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-30 14:12:43,342 DEBUG   SenderThread:19566 [sender.py:send():380] send: exit
+2023-10-30 14:12:43,342 INFO    SenderThread:19566 [sender.py:send_exit():585] handling exit code: 0
+2023-10-30 14:12:43,342 INFO    SenderThread:19566 [sender.py:send_exit():587] handling runtime: 26
+2023-10-30 14:12:43,343 INFO    SenderThread:19566 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-30 14:12:43,343 INFO    SenderThread:19566 [sender.py:send_exit():593] send defer
+2023-10-30 14:12:43,343 DEBUG   HandlerThread:19566 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 14:12:43,343 INFO    HandlerThread:19566 [handler.py:handle_request_defer():172] handle defer: 0
+2023-10-30 14:12:43,344 DEBUG   SenderThread:19566 [sender.py:send_request():407] send_request: defer
+2023-10-30 14:12:43,344 INFO    SenderThread:19566 [sender.py:send_request_defer():609] handle sender defer: 0
+2023-10-30 14:12:43,344 INFO    SenderThread:19566 [sender.py:transition_state():613] send defer: 1
+2023-10-30 14:12:43,344 DEBUG   HandlerThread:19566 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 14:12:43,344 INFO    HandlerThread:19566 [handler.py:handle_request_defer():172] handle defer: 1
+2023-10-30 14:12:43,347 DEBUG   SenderThread:19566 [sender.py:send_request():407] send_request: defer
+2023-10-30 14:12:43,348 INFO    SenderThread:19566 [sender.py:send_request_defer():609] handle sender defer: 1
+2023-10-30 14:12:43,348 INFO    SenderThread:19566 [sender.py:transition_state():613] send defer: 2
+2023-10-30 14:12:43,348 DEBUG   HandlerThread:19566 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 14:12:43,348 INFO    HandlerThread:19566 [handler.py:handle_request_defer():172] handle defer: 2
+2023-10-30 14:12:43,348 INFO    HandlerThread:19566 [system_monitor.py:finish():203] Stopping system monitor
+2023-10-30 14:12:43,348 DEBUG   SystemMonitor:19566 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-10-30 14:12:43,348 INFO    HandlerThread:19566 [interfaces.py:finish():202] Joined cpu monitor
+2023-10-30 14:12:43,349 DEBUG   SystemMonitor:19566 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-10-30 14:12:43,350 INFO    HandlerThread:19566 [interfaces.py:finish():202] Joined disk monitor
+2023-10-30 14:12:43,350 DEBUG   SystemMonitor:19566 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-10-30 14:12:43,406 INFO    HandlerThread:19566 [interfaces.py:finish():202] Joined gpu monitor
+2023-10-30 14:12:43,407 INFO    HandlerThread:19566 [interfaces.py:finish():202] Joined memory monitor
+2023-10-30 14:12:43,407 INFO    HandlerThread:19566 [interfaces.py:finish():202] Joined network monitor
+2023-10-30 14:12:43,408 DEBUG   SenderThread:19566 [sender.py:send_request():407] send_request: defer
+2023-10-30 14:12:43,408 INFO    SenderThread:19566 [sender.py:send_request_defer():609] handle sender defer: 2
+2023-10-30 14:12:43,408 INFO    SenderThread:19566 [sender.py:transition_state():613] send defer: 3
+2023-10-30 14:12:43,408 DEBUG   SenderThread:19566 [sender.py:send():380] send: stats
+2023-10-30 14:12:43,409 DEBUG   HandlerThread:19566 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 14:12:43,409 INFO    HandlerThread:19566 [handler.py:handle_request_defer():172] handle defer: 3
+2023-10-30 14:12:43,409 DEBUG   SenderThread:19566 [sender.py:send_request():407] send_request: defer
+2023-10-30 14:12:43,409 INFO    SenderThread:19566 [sender.py:send_request_defer():609] handle sender defer: 3
+2023-10-30 14:12:43,409 INFO    SenderThread:19566 [sender.py:transition_state():613] send defer: 4
+2023-10-30 14:12:43,410 DEBUG   HandlerThread:19566 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 14:12:43,410 INFO    HandlerThread:19566 [handler.py:handle_request_defer():172] handle defer: 4
+2023-10-30 14:12:43,410 DEBUG   SenderThread:19566 [sender.py:send_request():407] send_request: defer
+2023-10-30 14:12:43,410 INFO    SenderThread:19566 [sender.py:send_request_defer():609] handle sender defer: 4
+2023-10-30 14:12:43,410 INFO    SenderThread:19566 [sender.py:transition_state():613] send defer: 5
+2023-10-30 14:12:43,411 DEBUG   HandlerThread:19566 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 14:12:43,411 INFO    HandlerThread:19566 [handler.py:handle_request_defer():172] handle defer: 5
+2023-10-30 14:12:43,411 DEBUG   SenderThread:19566 [sender.py:send():380] send: summary
+2023-10-30 14:12:43,412 INFO    SenderThread:19566 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-30 14:12:43,412 DEBUG   SenderThread:19566 [sender.py:send_request():407] send_request: defer
+2023-10-30 14:12:43,412 INFO    SenderThread:19566 [sender.py:send_request_defer():609] handle sender defer: 5
+2023-10-30 14:12:43,413 INFO    SenderThread:19566 [sender.py:transition_state():613] send defer: 6
+2023-10-30 14:12:43,413 DEBUG   HandlerThread:19566 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 14:12:43,413 INFO    HandlerThread:19566 [handler.py:handle_request_defer():172] handle defer: 6
+2023-10-30 14:12:43,413 DEBUG   SenderThread:19566 [sender.py:send_request():407] send_request: defer
+2023-10-30 14:12:43,413 INFO    SenderThread:19566 [sender.py:send_request_defer():609] handle sender defer: 6
+2023-10-30 14:12:43,418 DEBUG   HandlerThread:19566 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 14:12:43,999 INFO    Thread-12 :19566 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/random_forest/wandb/run-20231030_141216-1q5t0vtq/files/wandb-summary.json
+2023-10-30 14:12:43,999 INFO    Thread-12 :19566 [dir_watcher.py:_on_file_created():271] file/dir created: /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/random_forest/wandb/run-20231030_141216-1q5t0vtq/files/media/images/confusion_matrix_0_8eff2c9aef444d4fd3a2.png
+2023-10-30 14:12:44,000 INFO    Thread-12 :19566 [dir_watcher.py:_on_file_created():271] file/dir created: /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/random_forest/wandb/run-20231030_141216-1q5t0vtq/files/media/images/feature_importance_0_23d43a0ba030ddc63d52.png
+2023-10-30 14:12:44,000 INFO    Thread-12 :19566 [dir_watcher.py:_on_file_created():271] file/dir created: /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/random_forest/wandb/run-20231030_141216-1q5t0vtq/files/media/images
+2023-10-30 14:12:44,000 INFO    Thread-12 :19566 [dir_watcher.py:_on_file_created():271] file/dir created: /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/random_forest/wandb/run-20231030_141216-1q5t0vtq/files/media
+2023-10-30 14:12:44,221 INFO    SenderThread:19566 [sender.py:transition_state():613] send defer: 7
+2023-10-30 14:12:44,221 DEBUG   HandlerThread:19566 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 14:12:44,221 INFO    HandlerThread:19566 [handler.py:handle_request_defer():172] handle defer: 7
+2023-10-30 14:12:44,222 DEBUG   SenderThread:19566 [sender.py:send_request():407] send_request: defer
+2023-10-30 14:12:44,222 INFO    SenderThread:19566 [sender.py:send_request_defer():609] handle sender defer: 7
+2023-10-30 14:12:44,252 INFO    wandb-upload_1:19566 [upload_job.py:push():131] Uploaded file /tmp/tmplrb3ex9swandb/3x4eqg6q-media/images/feature_importance_0_23d43a0ba030ddc63d52.png
+2023-10-30 14:12:44,342 DEBUG   HandlerThread:19566 [handler.py:handle_request():146] handle_request: poll_exit
+2023-10-30 14:12:44,722 INFO    wandb-upload_4:19566 [upload_job.py:push():131] Uploaded file /tmp/tmplrb3ex9swandb/wdu9z0l0-media/images/confusion_matrix_0_8eff2c9aef444d4fd3a2.png
+2023-10-30 14:12:44,915 INFO    SenderThread:19566 [sender.py:transition_state():613] send defer: 8
+2023-10-30 14:12:44,915 DEBUG   SenderThread:19566 [sender.py:send_request():407] send_request: poll_exit
+2023-10-30 14:12:44,915 DEBUG   HandlerThread:19566 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 14:12:44,916 INFO    HandlerThread:19566 [handler.py:handle_request_defer():172] handle defer: 8
+2023-10-30 14:12:44,916 DEBUG   SenderThread:19566 [sender.py:send_request():407] send_request: defer
+2023-10-30 14:12:44,916 INFO    SenderThread:19566 [sender.py:send_request_defer():609] handle sender defer: 8
+2023-10-30 14:12:44,916 INFO    SenderThread:19566 [job_builder.py:build():281] Attempting to build job artifact
+2023-10-30 14:12:44,917 INFO    SenderThread:19566 [job_builder.py:_get_source_type():393] is repo sourced job
+2023-10-30 14:12:44,919 INFO    SenderThread:19566 [job_builder.py:build():369] adding wandb-job metadata file
+2023-10-30 14:12:44,929 INFO    SenderThread:19566 [sender.py:transition_state():613] send defer: 9
+2023-10-30 14:12:44,929 DEBUG   HandlerThread:19566 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 14:12:44,930 INFO    HandlerThread:19566 [handler.py:handle_request_defer():172] handle defer: 9
+2023-10-30 14:12:44,930 DEBUG   SenderThread:19566 [sender.py:send():380] send: artifact
+2023-10-30 14:12:44,999 INFO    Thread-12 :19566 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/random_forest/wandb/run-20231030_141216-1q5t0vtq/files/config.yaml
+2023-10-30 14:12:45,000 INFO    Thread-12 :19566 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/random_forest/wandb/run-20231030_141216-1q5t0vtq/files/output.log
+2023-10-30 14:12:45,343 DEBUG   HandlerThread:19566 [handler.py:handle_request():146] handle_request: poll_exit
+2023-10-30 14:12:45,723 INFO    wandb-upload_2:19566 [upload_job.py:push():131] Uploaded file /tmp/tmplrb3ex9swandb/nnl50tkp-media/images/feature_importance_0_23d43a0ba030ddc63d52.png
+2023-10-30 14:12:47,021 INFO    wandb-upload_5:19566 [upload_job.py:push():131] Uploaded file /tmp/tmplrb3ex9swandb/7yc6yaij-media/images/confusion_matrix_0_8eff2c9aef444d4fd3a2.png
+2023-10-30 14:12:47,022 INFO    wandb-upload_1:19566 [upload_job.py:push():86] Skipped uploading /home/prayat/.local/share/wandb/artifacts/staging/tmp_ccq8eb4
+2023-10-30 14:12:47,503 INFO    wandb-upload_4:19566 [upload_job.py:push():89] Uploaded file /home/prayat/.local/share/wandb/artifacts/staging/tmpup81d441
+2023-10-30 14:12:49,295 INFO    SenderThread:19566 [sender.py:send_artifact():1456] sent artifact job-https___github.com_prayat-pu_genre_classification.git_random_forest_run.py - {'id': 'QXJ0aWZhY3Q6NjIxNjg3MzIx', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExMTEwMjczOQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjIxNjgzNjYz', 'versionIndex': 0}}}
+2023-10-30 14:12:49,295 DEBUG   SenderThread:19566 [sender.py:send_request():407] send_request: defer
+2023-10-30 14:12:49,295 INFO    SenderThread:19566 [sender.py:send_request_defer():609] handle sender defer: 9
+2023-10-30 14:12:49,295 INFO    SenderThread:19566 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-10-30 14:12:50,001 INFO    SenderThread:19566 [dir_watcher.py:finish():388] scan: /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/random_forest/wandb/run-20231030_141216-1q5t0vtq/files
+2023-10-30 14:12:50,002 INFO    SenderThread:19566 [dir_watcher.py:finish():402] scan save: /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/random_forest/wandb/run-20231030_141216-1q5t0vtq/files/requirements.txt requirements.txt
+2023-10-30 14:12:50,003 INFO    SenderThread:19566 [dir_watcher.py:finish():402] scan save: /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/random_forest/wandb/run-20231030_141216-1q5t0vtq/files/wandb-metadata.json wandb-metadata.json
+2023-10-30 14:12:50,003 INFO    SenderThread:19566 [dir_watcher.py:finish():402] scan save: /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/random_forest/wandb/run-20231030_141216-1q5t0vtq/files/config.yaml config.yaml
+2023-10-30 14:12:50,008 INFO    SenderThread:19566 [dir_watcher.py:finish():402] scan save: /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/random_forest/wandb/run-20231030_141216-1q5t0vtq/files/conda-environment.yaml conda-environment.yaml
+2023-10-30 14:12:50,008 INFO    SenderThread:19566 [dir_watcher.py:finish():402] scan save: /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/random_forest/wandb/run-20231030_141216-1q5t0vtq/files/output.log output.log
+2023-10-30 14:12:50,012 INFO    SenderThread:19566 [dir_watcher.py:finish():402] scan save: /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/random_forest/wandb/run-20231030_141216-1q5t0vtq/files/wandb-summary.json wandb-summary.json
+2023-10-30 14:12:50,022 INFO    SenderThread:19566 [dir_watcher.py:finish():402] scan save: /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/random_forest/wandb/run-20231030_141216-1q5t0vtq/files/media/images/confusion_matrix_0_8eff2c9aef444d4fd3a2.png media/images/confusion_matrix_0_8eff2c9aef444d4fd3a2.png
+2023-10-30 14:12:50,022 INFO    SenderThread:19566 [dir_watcher.py:finish():402] scan save: /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/random_forest/wandb/run-20231030_141216-1q5t0vtq/files/media/images/feature_importance_0_23d43a0ba030ddc63d52.png media/images/feature_importance_0_23d43a0ba030ddc63d52.png
+2023-10-30 14:12:50,022 INFO    SenderThread:19566 [sender.py:transition_state():613] send defer: 10
+2023-10-30 14:12:50,022 DEBUG   SenderThread:19566 [sender.py:send_request():407] send_request: poll_exit
+2023-10-30 14:12:50,023 DEBUG   HandlerThread:19566 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 14:12:50,023 INFO    HandlerThread:19566 [handler.py:handle_request_defer():172] handle defer: 10
+2023-10-30 14:12:50,023 DEBUG   HandlerThread:19566 [handler.py:handle_request():146] handle_request: status_report
+2023-10-30 14:12:50,024 DEBUG   SenderThread:19566 [sender.py:send_request():407] send_request: defer
+2023-10-30 14:12:50,024 INFO    SenderThread:19566 [sender.py:send_request_defer():609] handle sender defer: 10
+2023-10-30 14:12:50,024 INFO    SenderThread:19566 [file_pusher.py:finish():175] shutting down file pusher
+2023-10-30 14:12:50,345 DEBUG   HandlerThread:19566 [handler.py:handle_request():146] handle_request: keepalive
+2023-10-30 14:12:50,629 INFO    wandb-upload_5:19566 [upload_job.py:push():131] Uploaded file /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/random_forest/wandb/run-20231030_141216-1q5t0vtq/files/conda-environment.yaml
+2023-10-30 14:12:50,637 INFO    wandb-upload_2:19566 [upload_job.py:push():131] Uploaded file /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/random_forest/wandb/run-20231030_141216-1q5t0vtq/files/requirements.txt
+2023-10-30 14:12:50,765 INFO    wandb-upload_3:19566 [upload_job.py:push():131] Uploaded file /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/random_forest/wandb/run-20231030_141216-1q5t0vtq/files/config.yaml
+2023-10-30 14:12:50,882 INFO    wandb-upload_1:19566 [upload_job.py:push():131] Uploaded file /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/random_forest/wandb/run-20231030_141216-1q5t0vtq/files/output.log
+2023-10-30 14:12:50,883 INFO    wandb-upload_4:19566 [upload_job.py:push():131] Uploaded file /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/random_forest/wandb/run-20231030_141216-1q5t0vtq/files/wandb-summary.json
+2023-10-30 14:12:51,083 INFO    Thread-11 (_thread_body):19566 [sender.py:transition_state():613] send defer: 11
+2023-10-30 14:12:51,084 DEBUG   HandlerThread:19566 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 14:12:51,084 INFO    HandlerThread:19566 [handler.py:handle_request_defer():172] handle defer: 11
+2023-10-30 14:12:51,085 DEBUG   SenderThread:19566 [sender.py:send_request():407] send_request: defer
+2023-10-30 14:12:51,085 INFO    SenderThread:19566 [sender.py:send_request_defer():609] handle sender defer: 11
+2023-10-30 14:12:51,085 INFO    SenderThread:19566 [file_pusher.py:join():181] waiting for file pusher
+2023-10-30 14:12:51,085 INFO    SenderThread:19566 [sender.py:transition_state():613] send defer: 12
+2023-10-30 14:12:51,085 DEBUG   HandlerThread:19566 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 14:12:51,085 INFO    HandlerThread:19566 [handler.py:handle_request_defer():172] handle defer: 12
+2023-10-30 14:12:51,086 DEBUG   SenderThread:19566 [sender.py:send_request():407] send_request: defer
+2023-10-30 14:12:51,086 INFO    SenderThread:19566 [sender.py:send_request_defer():609] handle sender defer: 12
+2023-10-30 14:12:51,086 INFO    SenderThread:19566 [file_stream.py:finish():595] file stream finish called
+2023-10-30 14:12:51,464 INFO    SenderThread:19566 [file_stream.py:finish():599] file stream finish is done
+2023-10-30 14:12:51,464 INFO    SenderThread:19566 [sender.py:transition_state():613] send defer: 13
+2023-10-30 14:12:51,464 DEBUG   HandlerThread:19566 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 14:12:51,464 INFO    HandlerThread:19566 [handler.py:handle_request_defer():172] handle defer: 13
+2023-10-30 14:12:51,465 DEBUG   SenderThread:19566 [sender.py:send_request():407] send_request: defer
+2023-10-30 14:12:51,465 INFO    SenderThread:19566 [sender.py:send_request_defer():609] handle sender defer: 13
+2023-10-30 14:12:51,465 INFO    SenderThread:19566 [sender.py:transition_state():613] send defer: 14
+2023-10-30 14:12:51,466 DEBUG   HandlerThread:19566 [handler.py:handle_request():146] handle_request: defer
+2023-10-30 14:12:51,466 INFO    HandlerThread:19566 [handler.py:handle_request_defer():172] handle defer: 14
+2023-10-30 14:12:51,466 DEBUG   SenderThread:19566 [sender.py:send():380] send: final
+2023-10-30 14:12:51,466 DEBUG   SenderThread:19566 [sender.py:send():380] send: footer
+2023-10-30 14:12:51,467 DEBUG   SenderThread:19566 [sender.py:send_request():407] send_request: defer
+2023-10-30 14:12:51,467 INFO    SenderThread:19566 [sender.py:send_request_defer():609] handle sender defer: 14
+2023-10-30 14:12:51,467 DEBUG   HandlerThread:19566 [handler.py:handle_request():146] handle_request: poll_exit
+2023-10-30 14:12:51,468 DEBUG   SenderThread:19566 [sender.py:send_request():407] send_request: poll_exit
+2023-10-30 14:12:51,469 DEBUG   HandlerThread:19566 [handler.py:handle_request():146] handle_request: server_info
+2023-10-30 14:12:51,469 DEBUG   SenderThread:19566 [sender.py:send_request():407] send_request: server_info
+2023-10-30 14:12:51,472 DEBUG   HandlerThread:19566 [handler.py:handle_request():146] handle_request: get_summary
+2023-10-30 14:12:51,474 DEBUG   HandlerThread:19566 [handler.py:handle_request():146] handle_request: sampled_history
+2023-10-30 14:12:51,474 DEBUG   HandlerThread:19566 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-30 14:12:51,475 DEBUG   HandlerThread:19566 [handler.py:handle_request():146] handle_request: job_info
+2023-10-30 14:12:51,731 DEBUG   SenderThread:19566 [sender.py:send_request():407] send_request: job_info
+2023-10-30 14:12:51,732 INFO    MainThread:19566 [wandb_run.py:_footer_history_summary_info():3599] rendering history
+2023-10-30 14:12:51,732 INFO    MainThread:19566 [wandb_run.py:_footer_history_summary_info():3631] rendering summary
+2023-10-30 14:12:51,732 INFO    MainThread:19566 [wandb_run.py:_footer_sync_info():3558] logging synced files
+2023-10-30 14:12:51,733 DEBUG   HandlerThread:19566 [handler.py:handle_request():146] handle_request: shutdown
+2023-10-30 14:12:51,733 INFO    HandlerThread:19566 [handler.py:finish():866] shutting down handler
+2023-10-30 14:12:52,475 INFO    WriterThread:19566 [datastore.py:close():294] close: /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/random_forest/wandb/run-20231030_141216-1q5t0vtq/run-1q5t0vtq.wandb
+2023-10-30 14:12:52,732 INFO    SenderThread:19566 [sender.py:finish():1534] shutting down sender
+2023-10-30 14:12:52,732 INFO    SenderThread:19566 [file_pusher.py:finish():175] shutting down file pusher
+2023-10-30 14:12:52,732 INFO    SenderThread:19566 [file_pusher.py:join():181] waiting for file pusher

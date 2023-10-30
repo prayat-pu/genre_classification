@@ -1,0 +1,15 @@
+artifact_uri: file:///home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_%20Release_Deploy/exercise14/genre_classification/mlruns/0/dd086a1ee9504cff9eb0b1293e239413/artifacts
+end_time: 1698649753743
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: dd086a1ee9504cff9eb0b1293e239413
+run_name: receptive-seal-802
+run_uuid: dd086a1ee9504cff9eb0b1293e239413
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698649747089
+status: 4
+tags: []
+user_id: prayat

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_%20Release_Deploy/exercise14/genre_classification/mlruns/0/a4f8f2f0867b4d748880a8df6d45dd2f/artifacts
+end_time: 1698650588727
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a4f8f2f0867b4d748880a8df6d45dd2f
+run_name: stylish-steed-907
+run_uuid: a4f8f2f0867b4d748880a8df6d45dd2f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698650571909
+status: 3
+tags: []
+user_id: prayat

@@ -1,0 +1,39 @@
+2023-10-30 14:08:00,661 Downloading and reading train artifact
+[34m[1mwandb[39m[22m: [32m[41mERROR[39m[49m Unable to fetch artifact with name prahyat/exercise_14/processed_data_train.csv:latest
+Traceback (most recent call last):
+  File "/home/prayat/miniconda3/envs/mlflow-a584de6a08384e1b08b232e05370f050c04467d8/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/prayat/miniconda3/envs/mlflow-a584de6a08384e1b08b232e05370f050c04467d8/lib/python3.11/site-packages/wandb/apis/public.py", line 1040, in artifact
+    artifact = wandb.Artifact._from_name(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/prayat/miniconda3/envs/mlflow-a584de6a08384e1b08b232e05370f050c04467d8/lib/python3.11/site-packages/wandb/sdk/artifacts/artifact.py", line 256, in _from_name
+    raise ValueError(
+ValueError: Unable to fetch artifact with name prahyat/exercise_14/processed_data_train.csv:latest
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/random_forest/run.py", line 263, in <module>
+    go(args)
+  File "/home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/random_forest/run.py", line 33, in go
+    train_data_path = run.use_artifact(args.train_data).file()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/prayat/miniconda3/envs/mlflow-a584de6a08384e1b08b232e05370f050c04467d8/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 370, in wrapper_fn
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/prayat/miniconda3/envs/mlflow-a584de6a08384e1b08b232e05370f050c04467d8/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 360, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/prayat/miniconda3/envs/mlflow-a584de6a08384e1b08b232e05370f050c04467d8/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 2731, in use_artifact
+    artifact = public_api.artifact(type=type, name=name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/prayat/miniconda3/envs/mlflow-a584de6a08384e1b08b232e05370f050c04467d8/lib/python3.11/site-packages/wandb/apis/normalize.py", line 87, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/home/prayat/miniconda3/envs/mlflow-a584de6a08384e1b08b232e05370f050c04467d8/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/prayat/miniconda3/envs/mlflow-a584de6a08384e1b08b232e05370f050c04467d8/lib/python3.11/site-packages/wandb/apis/public.py", line 1040, in artifact
+    artifact = wandb.Artifact._from_name(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/prayat/miniconda3/envs/mlflow-a584de6a08384e1b08b232e05370f050c04467d8/lib/python3.11/site-packages/wandb/sdk/artifacts/artifact.py", line 256, in _from_name
+    raise ValueError(
+wandb.errors.CommError: Unable to fetch artifact with name prahyat/exercise_14/processed_data_train.csv:latest

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_%20Release_Deploy/exercise14/genre_classification/mlruns/0/f4ece545ac154aa68e66eb1c9a89ce37/artifacts
+end_time: 1698647549084
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f4ece545ac154aa68e66eb1c9a89ce37
+run_name: skittish-shoat-969
+run_uuid: f4ece545ac154aa68e66eb1c9a89ce37
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698647400761
+status: 4
+tags: []
+user_id: prayat

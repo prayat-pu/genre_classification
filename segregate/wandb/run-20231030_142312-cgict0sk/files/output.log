@@ -1,0 +1,7 @@
+
+2023-10-30 14:23:15,156 Downloading and reading artifact
+2023-10-30 14:23:17,460 Splitting data into train, val and test
+2023-10-30 14:23:17,508 Uploading the train dataset to processed_data_train.csv
+2023-10-30 14:23:17,802 Logging artifact
+2023-10-30 14:23:24,478 Uploading the test dataset to processed_data_test.csv
+2023-10-30 14:23:24,605 Logging artifact

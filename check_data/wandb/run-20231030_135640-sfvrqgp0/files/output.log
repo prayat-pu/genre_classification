@@ -1,0 +1,92 @@
+[1m============================= test session starts ==============================
+platform linux -- Python 3.11.6, pytest-7.4.3, pluggy-1.3.0 -- /home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/bin/python
+cachedir: .pytest_cache
+rootdir: /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/check_data
+[1mcollected 4 items                                                              
+test_data.py::test_column_presence_and_type [31mERROR
+test_data.py::test_class_names [31mERROR
+test_data.py::test_column_ranges [31mERROR
+test_data.py::test_kolmogorov_smirnov [31mERROR
+==================================== ERRORS ====================================
+[31m[1m_______________ ERROR at setup of test_column_presence_and_type ________________
+request = <SubRequest 'data' for <Function test_column_presence_and_type>>
+    @pytest.fixture(scope="session")
+    def data(request):
+        reference_artifact = request.config.option.reference_artifact
+        if reference_artifact is None:
+            pytest.fail("--reference_artifact missing on command line")
+        sample_artifact = request.config.option.sample_artifact
+        if sample_artifact is None:
+            pytest.fail("--sample_artifact missing on command line")
+        # local_path = run.use_artifact(reference_artifact).file()
+        # sample1 = pd.read_csv(local_path)
+        local_path = run.use_artifact(sample_artifact).file()
+        sample2 = pd.read_csv(local_path)
+>       return sample1, sample2
+[31m[1mE       NameError: name 'sample1' is not defined
+[31m[1mconftest.py[39m[22m:34: NameError
+[31m[1m______________________ ERROR at setup of test_class_names ______________________
+request = <SubRequest 'data' for <Function test_column_presence_and_type>>
+    @pytest.fixture(scope="session")
+    def data(request):
+        reference_artifact = request.config.option.reference_artifact
+        if reference_artifact is None:
+            pytest.fail("--reference_artifact missing on command line")
+        sample_artifact = request.config.option.sample_artifact
+        if sample_artifact is None:
+            pytest.fail("--sample_artifact missing on command line")
+        # local_path = run.use_artifact(reference_artifact).file()
+        # sample1 = pd.read_csv(local_path)
+        local_path = run.use_artifact(sample_artifact).file()
+        sample2 = pd.read_csv(local_path)
+>       return sample1, sample2
+[31m[1mE       NameError: name 'sample1' is not defined
+[31m[1mconftest.py[39m[22m:34: NameError
+[31m[1m_____________________ ERROR at setup of test_column_ranges _____________________
+request = <SubRequest 'data' for <Function test_column_presence_and_type>>
+    @pytest.fixture(scope="session")
+    def data(request):
+        reference_artifact = request.config.option.reference_artifact
+        if reference_artifact is None:
+            pytest.fail("--reference_artifact missing on command line")
+        sample_artifact = request.config.option.sample_artifact
+        if sample_artifact is None:
+            pytest.fail("--sample_artifact missing on command line")
+        # local_path = run.use_artifact(reference_artifact).file()
+        # sample1 = pd.read_csv(local_path)
+        local_path = run.use_artifact(sample_artifact).file()
+        sample2 = pd.read_csv(local_path)
+>       return sample1, sample2
+[31m[1mE       NameError: name 'sample1' is not defined
+[31m[1mconftest.py[39m[22m:34: NameError
+[31m[1m__________________ ERROR at setup of test_kolmogorov_smirnov ___________________
+request = <SubRequest 'data' for <Function test_column_presence_and_type>>
+    @pytest.fixture(scope="session")
+    def data(request):
+        reference_artifact = request.config.option.reference_artifact
+        if reference_artifact is None:
+            pytest.fail("--reference_artifact missing on command line")
+        sample_artifact = request.config.option.sample_artifact
+        if sample_artifact is None:
+            pytest.fail("--sample_artifact missing on command line")
+        # local_path = run.use_artifact(reference_artifact).file()
+        # sample1 = pd.read_csv(local_path)
+        local_path = run.use_artifact(sample_artifact).file()
+        sample2 = pd.read_csv(local_path)
+>       return sample1, sample2
+[31m[1mE       NameError: name 'sample1' is not defined
+[31m[1mconftest.py[39m[22m:34: NameError
+[33m=============================== warnings summary ===============================
+../../../../../../../miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/sdk/launch/builder/build.py:11
+  /home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/sdk/launch/builder/build.py:11: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+    import pkg_resources
+test_data.py::test_column_presence_and_type
+  /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/check_data/conftest.py:32: DtypeWarning: Columns (16) have mixed types. Specify dtype option on import or set low_memory=False.
+    sample2 = pd.read_csv(local_path)
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+[36m[1m=========================== short test summary info ============================
+[31mERROR[39m test_data.py::[1mtest_column_presence_and_type[22m - NameError: name 'sample1' is not defined
+[31mERROR[39m test_data.py::[1mtest_class_names[22m - NameError: name 'sample1' is not defined
+[31mERROR[39m test_data.py::[1mtest_column_ranges[22m - NameError: name 'sample1' is not defined
+[31mERROR[39m test_data.py::[1mtest_kolmogorov_smirnov[22m - NameError: name 'sample1' is not defined
+[31m======================== [33m2 warnings[39m, [31m[1m4 errors[22m in 2.86s =========================

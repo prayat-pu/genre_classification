@@ -1,0 +1,64 @@
+[1m============================= test session starts ==============================
+platform linux -- Python 3.11.6, pytest-7.4.3, pluggy-1.3.0 -- /home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/bin/python
+cachedir: .pytest_cache
+rootdir: /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/check_data
+[1mcollected 4 items                                                              
+test_data.py::test_column_presence_and_type [31mFAILED
+test_data.py::test_class_names [31mFAILED
+test_data.py::test_column_ranges [31mFAILED
+test_data.py::test_kolmogorov_smirnov [31mFAILED
+=================================== FAILURES ===================================
+[31m[1m________________________ test_column_presence_and_type _________________________
+data =        Unnamed: 0  ...                                    text_feature
+0               0  ...                         ...  Euphoric Hardstyle
+41974       41974  ...                         Best of Hardstyle 2020
+[41975 rows x 19 columns]
+    def test_column_presence_and_type(data):
+        # Disregard the reference dataset
+>       _, data = data
+[31m[1mE       ValueError: too many values to unpack (expected 2)
+[31m[1mtest_data.py[39m[22m:8: ValueError
+[31m[1m_______________________________ test_class_names _______________________________
+data =        Unnamed: 0  ...                                    text_feature
+0               0  ...                         ...  Euphoric Hardstyle
+41974       41974  ...                         Best of Hardstyle 2020
+[41975 rows x 19 columns]
+    def test_class_names(data):
+        # Disregard the reference dataset
+>       _, data = data
+[31m[1mE       ValueError: too many values to unpack (expected 2)
+[31m[1mtest_data.py[39m[22m:38: ValueError
+[31m[1m______________________________ test_column_ranges ______________________________
+data =        Unnamed: 0  ...                                    text_feature
+0               0  ...                         ...  Euphoric Hardstyle
+41974       41974  ...                         Best of Hardstyle 2020
+[41975 rows x 19 columns]
+    def test_column_ranges(data):
+        # Disregard the reference dataset
+>       _, data = data
+[31m[1mE       ValueError: too many values to unpack (expected 2)
+[31m[1mtest_data.py[39m[22m:65: ValueError
+[31m[1m___________________________ test_kolmogorov_smirnov ____________________________
+data =        Unnamed: 0  ...                                    text_feature
+0               0  ...                         ...  Euphoric Hardstyle
+41974       41974  ...                         Best of Hardstyle 2020
+[41975 rows x 19 columns]
+ks_alpha = 0.05
+    def test_kolmogorov_smirnov(data, ks_alpha):
+>       sample1, sample2 = data
+[31m[1mE       ValueError: too many values to unpack (expected 2)
+[31m[1mtest_data.py[39m[22m:92: ValueError
+[33m=============================== warnings summary ===============================
+../../../../../../../miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/sdk/launch/builder/build.py:11
+  /home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/sdk/launch/builder/build.py:11: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+    import pkg_resources
+test_data.py::test_column_presence_and_type
+  /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/check_data/conftest.py:32: DtypeWarning: Columns (16) have mixed types. Specify dtype option on import or set low_memory=False.
+    sample2 = pd.read_csv(local_path)
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+[36m[1m=========================== short test summary info ============================
+[31mFAILED[39m test_data.py::[1mtest_column_presence_and_type[22m - ValueError: too many values to unpack (expected 2)
+[31mFAILED[39m test_data.py::[1mtest_class_names[22m - ValueError: too many values to unpack (expected 2)
+[31mFAILED[39m test_data.py::[1mtest_column_ranges[22m - ValueError: too many values to unpack (expected 2)
+[31mFAILED[39m test_data.py::[1mtest_kolmogorov_smirnov[22m - ValueError: too many values to unpack (expected 2)
+[31m======================== [1m4 failed[39m[22m, [33m2 warnings[31m in 3.10s =========================

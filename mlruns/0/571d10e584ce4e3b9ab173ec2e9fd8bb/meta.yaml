@@ -1,0 +1,15 @@
+artifact_uri: file:///home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_%20Release_Deploy/exercise14/genre_classification/mlruns/0/571d10e584ce4e3b9ab173ec2e9fd8bb/artifacts
+end_time: 1698645871629
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 571d10e584ce4e3b9ab173ec2e9fd8bb
+run_name: sneaky-ox-345
+run_uuid: 571d10e584ce4e3b9ab173ec2e9fd8bb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698645729677
+status: 3
+tags: []
+user_id: prayat

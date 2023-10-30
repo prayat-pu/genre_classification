@@ -1,0 +1,15 @@
+artifact_uri: file:///home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_%20Release_Deploy/exercise14/genre_classification/mlruns/0/a687577e6cf34c8e991ac585de70e240/artifacts
+end_time: 1698649449029
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a687577e6cf34c8e991ac585de70e240
+run_name: crawling-fowl-92
+run_uuid: a687577e6cf34c8e991ac585de70e240
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698649429269
+status: 4
+tags: []
+user_id: prayat

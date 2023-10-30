@@ -1,0 +1,15 @@
+artifact_uri: file:///home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_%20Release_Deploy/exercise14/genre_classification/mlruns/0/c2a21da27ba44771b2ab04043044c2bd/artifacts
+end_time: 1698645523825
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c2a21da27ba44771b2ab04043044c2bd
+run_name: rumbling-perch-598
+run_uuid: c2a21da27ba44771b2ab04043044c2bd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698645521114
+status: 4
+tags: []
+user_id: prayat

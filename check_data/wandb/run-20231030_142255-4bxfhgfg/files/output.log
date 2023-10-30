@@ -1,0 +1,21 @@
+[1m========================================================================= test session starts ==========================================================================
+platform linux -- Python 3.11.6, pytest-7.4.3, pluggy-1.3.0 -- /home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/bin/python
+cachedir: .pytest_cache
+rootdir: /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/check_data
+[1mcollected 4 items                                                                                                                                                      
+test_data.py::test_column_presence_and_type [32mPASSED
+test_data.py::test_class_names [32mPASSED
+test_data.py::test_column_ranges [32mPASSED
+test_data.py::test_kolmogorov_smirnov [32mPASSED
+[33m=========================================================================== warnings summary ===========================================================================
+../../../../../../../miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/sdk/launch/builder/build.py:11
+  /home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/sdk/launch/builder/build.py:11: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+    import pkg_resources
+test_data.py::test_column_presence_and_type
+  /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/check_data/conftest.py:29: DtypeWarning: Columns (16) have mixed types. Specify dtype option on import or set low_memory=False.
+    sample1 = pd.read_csv(local_path)
+test_data.py::test_column_presence_and_type
+  /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/check_data/conftest.py:32: DtypeWarning: Columns (16) have mixed types. Specify dtype option on import or set low_memory=False.
+    sample2 = pd.read_csv(local_path)
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+[33m==================================================================== [32m4 passed[39m, [33m[1m3 warnings[22m in 5.24s =====================================================================

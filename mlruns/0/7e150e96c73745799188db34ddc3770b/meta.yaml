@@ -1,0 +1,15 @@
+artifact_uri: file:///home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_%20Release_Deploy/exercise14/genre_classification/mlruns/0/7e150e96c73745799188db34ddc3770b/artifacts
+end_time: 1698647186313
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7e150e96c73745799188db34ddc3770b
+run_name: bittersweet-mule-814
+run_uuid: 7e150e96c73745799188db34ddc3770b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698647112931
+status: 4
+tags: []
+user_id: prayat

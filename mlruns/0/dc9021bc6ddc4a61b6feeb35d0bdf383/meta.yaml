@@ -1,0 +1,15 @@
+artifact_uri: file:///home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_%20Release_Deploy/exercise14/genre_classification/mlruns/0/dc9021bc6ddc4a61b6feeb35d0bdf383/artifacts
+end_time: 1698650186230
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: dc9021bc6ddc4a61b6feeb35d0bdf383
+run_name: merciful-donkey-750
+run_uuid: dc9021bc6ddc4a61b6feeb35d0bdf383
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698649992785
+status: 4
+tags: []
+user_id: prayat

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_%20Release_Deploy/exercise14/genre_classification/mlruns/0/ebc7691be9844ca59c0d4fad8a47ee89/artifacts
+end_time: 1698649011551
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ebc7691be9844ca59c0d4fad8a47ee89
+run_name: nervous-shark-960
+run_uuid: ebc7691be9844ca59c0d4fad8a47ee89
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698648993888
+status: 4
+tags: []
+user_id: prayat

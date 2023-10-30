@@ -1,0 +1,489 @@
+[1m============================= test session starts ==============================
+platform linux -- Python 3.11.6, pytest-7.4.3, pluggy-1.3.0 -- /home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/bin/python
+cachedir: .pytest_cache
+rootdir: /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/check_data
+[1mcollected 4 items                                                              
+test_data.py::test_column_presence_and_type [31mERROR
+test_data.py::test_class_names [31mERROR
+test_data.py::test_column_ranges [31mERROR
+test_data.py::test_kolmogorov_smirnov [31mERROR
+==================================== ERRORS ====================================
+[31m[1m_______________ ERROR at setup of test_column_presence_and_type ________________
+args = (<wandb.apis.public.Api object at 0x7fa1bb859690>,)
+kwargs = {'name': 'exercise_14/preprocessed_data.csv:latest', 'type': None}
+message = 'Unable to fetch artifact with name prahyat/exercise_14/preprocessed_data.csv:latest'
+payload = 'Unable to fetch artifact with name prahyat/exercise_14/preprocessed_data.csv:latest'
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        message = "Whoa, you found a bug."
+        try:
+>           return func(*args, **kwargs)
+[31m[1m/home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/apis/normalize.py[39m[22m:41:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+[31m[1m/home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/apis/public.py[39m[22m:1040: in artifact
+    artifact = wandb.Artifact._from_name(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+cls = <class 'wandb.sdk.artifacts.artifact.Artifact'>, entity = 'prahyat'
+project = 'exercise_14', name = 'preprocessed_data.csv:latest'
+client = <wandb.apis.public.RetryingClient object at 0x7fa1bb85d450>
+    @classmethod
+    def _from_name(
+        cls, entity: str, project: str, name: str, client: RetryingClient
+    ) -> "Artifact":
+        query = gql(
+            """
+            query ArtifactByName(
+                $entityName: String!,
+                $projectName: String!,
+                $name: String!
+            ) {
+                project(name: $projectName, entityName: $entityName) {
+                    artifact(name: $name) {
+                        ...ArtifactFragment
+                    }
+                }
+            }
+            """
+            + cls._get_gql_artifact_fragment()
+        )
+        response = client.execute(
+            query,
+            variable_values={
+                "entityName": entity,
+                "projectName": project,
+                "name": name,
+            },
+        )
+        attrs = response.get("project", {}).get("artifact")
+        if attrs is None:
+>           raise ValueError(
+                f"Unable to fetch artifact with name {entity}/{project}/{name}"
+            )
+[31m[1mE           ValueError: Unable to fetch artifact with name prahyat/exercise_14/preprocessed_data.csv:latest
+[31m[1m/home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/sdk/artifacts/artifact.py[39m[22m:256: ValueError
+[33mDuring handling of the above exception, another exception occurred:
+request = <SubRequest 'data' for <Function test_column_presence_and_type>>
+    @pytest.fixture(scope="session")
+    def data(request):
+        reference_artifact = request.config.option.reference_artifact
+        if reference_artifact is None:
+            pytest.fail("--reference_artifact missing on command line")
+        sample_artifact = request.config.option.sample_artifact
+        if sample_artifact is None:
+            pytest.fail("--sample_artifact missing on command line")
+>       local_path = run.use_artifact(reference_artifact).file()
+[31m[1mconftest.py[39m[22m:28:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+[31m[1m/home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/sdk/wandb_run.py[39m[22m:370: in wrapper_fn
+    return func(self, *args, **kwargs)
+[31m[1m/home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/sdk/wandb_run.py[39m[22m:360: in wrapper
+    return func(self, *args, **kwargs)
+[31m[1m/home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/sdk/wandb_run.py[39m[22m:2731: in use_artifact
+    artifact = public_api.artifact(type=type, name=name)
+[31m[1m/home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/apis/normalize.py[39m[22m:87: in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+[31m[1m/home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/apis/normalize.py[39m[22m:41: in wrapper
+    return func(*args, **kwargs)
+[31m[1m/home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/apis/public.py[39m[22m:1040: in artifact
+    artifact = wandb.Artifact._from_name(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+cls = <class 'wandb.sdk.artifacts.artifact.Artifact'>, entity = 'prahyat'
+project = 'exercise_14', name = 'preprocessed_data.csv:latest'
+client = <wandb.apis.public.RetryingClient object at 0x7fa1bb85d450>
+    @classmethod
+    def _from_name(
+        cls, entity: str, project: str, name: str, client: RetryingClient
+    ) -> "Artifact":
+        query = gql(
+            """
+            query ArtifactByName(
+                $entityName: String!,
+                $projectName: String!,
+                $name: String!
+            ) {
+                project(name: $projectName, entityName: $entityName) {
+                    artifact(name: $name) {
+                        ...ArtifactFragment
+                    }
+                }
+            }
+            """
+            + cls._get_gql_artifact_fragment()
+        )
+        response = client.execute(
+            query,
+            variable_values={
+                "entityName": entity,
+                "projectName": project,
+                "name": name,
+            },
+        )
+        attrs = response.get("project", {}).get("artifact")
+        if attrs is None:
+>           raise ValueError(
+                f"Unable to fetch artifact with name {entity}/{project}/{name}"
+            )
+[31m[1mE           wandb.errors.CommError: Unable to fetch artifact with name prahyat/exercise_14/preprocessed_data.csv:latest
+[31m[1m/home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/sdk/artifacts/artifact.py[39m[22m:256: CommError
+[31m[1m______________________ ERROR at setup of test_class_names ______________________
+args = (<wandb.apis.public.Api object at 0x7fa1bb859690>,)
+kwargs = {'name': 'exercise_14/preprocessed_data.csv:latest', 'type': None}
+message = 'Unable to fetch artifact with name prahyat/exercise_14/preprocessed_data.csv:latest'
+payload = 'Unable to fetch artifact with name prahyat/exercise_14/preprocessed_data.csv:latest'
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        message = "Whoa, you found a bug."
+        try:
+>           return func(*args, **kwargs)
+[31m[1m/home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/apis/normalize.py[39m[22m:41:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+[31m[1m/home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/apis/public.py[39m[22m:1040: in artifact
+    artifact = wandb.Artifact._from_name(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+cls = <class 'wandb.sdk.artifacts.artifact.Artifact'>, entity = 'prahyat'
+project = 'exercise_14', name = 'preprocessed_data.csv:latest'
+client = <wandb.apis.public.RetryingClient object at 0x7fa1bb85d450>
+    @classmethod
+    def _from_name(
+        cls, entity: str, project: str, name: str, client: RetryingClient
+    ) -> "Artifact":
+        query = gql(
+            """
+            query ArtifactByName(
+                $entityName: String!,
+                $projectName: String!,
+                $name: String!
+            ) {
+                project(name: $projectName, entityName: $entityName) {
+                    artifact(name: $name) {
+                        ...ArtifactFragment
+                    }
+                }
+            }
+            """
+            + cls._get_gql_artifact_fragment()
+        )
+        response = client.execute(
+            query,
+            variable_values={
+                "entityName": entity,
+                "projectName": project,
+                "name": name,
+            },
+        )
+        attrs = response.get("project", {}).get("artifact")
+        if attrs is None:
+>           raise ValueError(
+                f"Unable to fetch artifact with name {entity}/{project}/{name}"
+            )
+[31m[1mE           ValueError: Unable to fetch artifact with name prahyat/exercise_14/preprocessed_data.csv:latest
+[31m[1m/home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/sdk/artifacts/artifact.py[39m[22m:256: ValueError
+[33mDuring handling of the above exception, another exception occurred:
+request = <SubRequest 'data' for <Function test_column_presence_and_type>>
+    @pytest.fixture(scope="session")
+    def data(request):
+        reference_artifact = request.config.option.reference_artifact
+        if reference_artifact is None:
+            pytest.fail("--reference_artifact missing on command line")
+        sample_artifact = request.config.option.sample_artifact
+        if sample_artifact is None:
+            pytest.fail("--sample_artifact missing on command line")
+>       local_path = run.use_artifact(reference_artifact).file()
+[31m[1mconftest.py[39m[22m:28:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+[31m[1m/home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/sdk/wandb_run.py[39m[22m:370: in wrapper_fn
+    return func(self, *args, **kwargs)
+[31m[1m/home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/sdk/wandb_run.py[39m[22m:360: in wrapper
+    return func(self, *args, **kwargs)
+[31m[1m/home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/sdk/wandb_run.py[39m[22m:2731: in use_artifact
+    artifact = public_api.artifact(type=type, name=name)
+[31m[1m/home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/apis/normalize.py[39m[22m:87: in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+[31m[1m/home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/apis/normalize.py[39m[22m:41: in wrapper
+    return func(*args, **kwargs)
+[31m[1m/home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/apis/public.py[39m[22m:1040: in artifact
+    artifact = wandb.Artifact._from_name(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+cls = <class 'wandb.sdk.artifacts.artifact.Artifact'>, entity = 'prahyat'
+project = 'exercise_14', name = 'preprocessed_data.csv:latest'
+client = <wandb.apis.public.RetryingClient object at 0x7fa1bb85d450>
+    @classmethod
+    def _from_name(
+        cls, entity: str, project: str, name: str, client: RetryingClient
+    ) -> "Artifact":
+        query = gql(
+            """
+            query ArtifactByName(
+                $entityName: String!,
+                $projectName: String!,
+                $name: String!
+            ) {
+                project(name: $projectName, entityName: $entityName) {
+                    artifact(name: $name) {
+                        ...ArtifactFragment
+                    }
+                }
+            }
+            """
+            + cls._get_gql_artifact_fragment()
+        )
+        response = client.execute(
+            query,
+            variable_values={
+                "entityName": entity,
+                "projectName": project,
+                "name": name,
+            },
+        )
+        attrs = response.get("project", {}).get("artifact")
+        if attrs is None:
+>           raise ValueError(
+                f"Unable to fetch artifact with name {entity}/{project}/{name}"
+            )
+[31m[1mE           wandb.errors.CommError: Unable to fetch artifact with name prahyat/exercise_14/preprocessed_data.csv:latest
+[31m[1m/home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/sdk/artifacts/artifact.py[39m[22m:256: CommError
+[31m[1m_____________________ ERROR at setup of test_column_ranges _____________________
+args = (<wandb.apis.public.Api object at 0x7fa1bb859690>,)
+kwargs = {'name': 'exercise_14/preprocessed_data.csv:latest', 'type': None}
+message = 'Unable to fetch artifact with name prahyat/exercise_14/preprocessed_data.csv:latest'
+payload = 'Unable to fetch artifact with name prahyat/exercise_14/preprocessed_data.csv:latest'
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        message = "Whoa, you found a bug."
+        try:
+>           return func(*args, **kwargs)
+[31m[1m/home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/apis/normalize.py[39m[22m:41:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+[31m[1m/home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/apis/public.py[39m[22m:1040: in artifact
+    artifact = wandb.Artifact._from_name(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+cls = <class 'wandb.sdk.artifacts.artifact.Artifact'>, entity = 'prahyat'
+project = 'exercise_14', name = 'preprocessed_data.csv:latest'
+client = <wandb.apis.public.RetryingClient object at 0x7fa1bb85d450>
+    @classmethod
+    def _from_name(
+        cls, entity: str, project: str, name: str, client: RetryingClient
+    ) -> "Artifact":
+        query = gql(
+            """
+            query ArtifactByName(
+                $entityName: String!,
+                $projectName: String!,
+                $name: String!
+            ) {
+                project(name: $projectName, entityName: $entityName) {
+                    artifact(name: $name) {
+                        ...ArtifactFragment
+                    }
+                }
+            }
+            """
+            + cls._get_gql_artifact_fragment()
+        )
+        response = client.execute(
+            query,
+            variable_values={
+                "entityName": entity,
+                "projectName": project,
+                "name": name,
+            },
+        )
+        attrs = response.get("project", {}).get("artifact")
+        if attrs is None:
+>           raise ValueError(
+                f"Unable to fetch artifact with name {entity}/{project}/{name}"
+            )
+[31m[1mE           ValueError: Unable to fetch artifact with name prahyat/exercise_14/preprocessed_data.csv:latest
+[31m[1m/home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/sdk/artifacts/artifact.py[39m[22m:256: ValueError
+[33mDuring handling of the above exception, another exception occurred:
+request = <SubRequest 'data' for <Function test_column_presence_and_type>>
+    @pytest.fixture(scope="session")
+    def data(request):
+        reference_artifact = request.config.option.reference_artifact
+        if reference_artifact is None:
+            pytest.fail("--reference_artifact missing on command line")
+        sample_artifact = request.config.option.sample_artifact
+        if sample_artifact is None:
+            pytest.fail("--sample_artifact missing on command line")
+>       local_path = run.use_artifact(reference_artifact).file()
+[31m[1mconftest.py[39m[22m:28:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+[31m[1m/home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/sdk/wandb_run.py[39m[22m:370: in wrapper_fn
+    return func(self, *args, **kwargs)
+[31m[1m/home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/sdk/wandb_run.py[39m[22m:360: in wrapper
+    return func(self, *args, **kwargs)
+[31m[1m/home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/sdk/wandb_run.py[39m[22m:2731: in use_artifact
+    artifact = public_api.artifact(type=type, name=name)
+[31m[1m/home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/apis/normalize.py[39m[22m:87: in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+[31m[1m/home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/apis/normalize.py[39m[22m:41: in wrapper
+    return func(*args, **kwargs)
+[31m[1m/home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/apis/public.py[39m[22m:1040: in artifact
+    artifact = wandb.Artifact._from_name(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+cls = <class 'wandb.sdk.artifacts.artifact.Artifact'>, entity = 'prahyat'
+project = 'exercise_14', name = 'preprocessed_data.csv:latest'
+client = <wandb.apis.public.RetryingClient object at 0x7fa1bb85d450>
+    @classmethod
+    def _from_name(
+        cls, entity: str, project: str, name: str, client: RetryingClient
+    ) -> "Artifact":
+        query = gql(
+            """
+            query ArtifactByName(
+                $entityName: String!,
+                $projectName: String!,
+                $name: String!
+            ) {
+                project(name: $projectName, entityName: $entityName) {
+                    artifact(name: $name) {
+                        ...ArtifactFragment
+                    }
+                }
+            }
+            """
+            + cls._get_gql_artifact_fragment()
+        )
+        response = client.execute(
+            query,
+            variable_values={
+                "entityName": entity,
+                "projectName": project,
+                "name": name,
+            },
+        )
+        attrs = response.get("project", {}).get("artifact")
+        if attrs is None:
+>           raise ValueError(
+                f"Unable to fetch artifact with name {entity}/{project}/{name}"
+            )
+[31m[1mE           wandb.errors.CommError: Unable to fetch artifact with name prahyat/exercise_14/preprocessed_data.csv:latest
+[31m[1m/home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/sdk/artifacts/artifact.py[39m[22m:256: CommError
+[31m[1m__________________ ERROR at setup of test_kolmogorov_smirnov ___________________
+args = (<wandb.apis.public.Api object at 0x7fa1bb859690>,)
+kwargs = {'name': 'exercise_14/preprocessed_data.csv:latest', 'type': None}
+message = 'Unable to fetch artifact with name prahyat/exercise_14/preprocessed_data.csv:latest'
+payload = 'Unable to fetch artifact with name prahyat/exercise_14/preprocessed_data.csv:latest'
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        message = "Whoa, you found a bug."
+        try:
+>           return func(*args, **kwargs)
+[31m[1m/home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/apis/normalize.py[39m[22m:41:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+[31m[1m/home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/apis/public.py[39m[22m:1040: in artifact
+    artifact = wandb.Artifact._from_name(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+cls = <class 'wandb.sdk.artifacts.artifact.Artifact'>, entity = 'prahyat'
+project = 'exercise_14', name = 'preprocessed_data.csv:latest'
+client = <wandb.apis.public.RetryingClient object at 0x7fa1bb85d450>
+    @classmethod
+    def _from_name(
+        cls, entity: str, project: str, name: str, client: RetryingClient
+    ) -> "Artifact":
+        query = gql(
+            """
+            query ArtifactByName(
+                $entityName: String!,
+                $projectName: String!,
+                $name: String!
+            ) {
+                project(name: $projectName, entityName: $entityName) {
+                    artifact(name: $name) {
+                        ...ArtifactFragment
+                    }
+                }
+            }
+            """
+            + cls._get_gql_artifact_fragment()
+        )
+        response = client.execute(
+            query,
+            variable_values={
+                "entityName": entity,
+                "projectName": project,
+                "name": name,
+            },
+        )
+        attrs = response.get("project", {}).get("artifact")
+        if attrs is None:
+>           raise ValueError(
+                f"Unable to fetch artifact with name {entity}/{project}/{name}"
+            )
+[31m[1mE           ValueError: Unable to fetch artifact with name prahyat/exercise_14/preprocessed_data.csv:latest
+[31m[1m/home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/sdk/artifacts/artifact.py[39m[22m:256: ValueError
+[33mDuring handling of the above exception, another exception occurred:
+request = <SubRequest 'data' for <Function test_column_presence_and_type>>
+    @pytest.fixture(scope="session")
+    def data(request):
+        reference_artifact = request.config.option.reference_artifact
+        if reference_artifact is None:
+            pytest.fail("--reference_artifact missing on command line")
+        sample_artifact = request.config.option.sample_artifact
+        if sample_artifact is None:
+            pytest.fail("--sample_artifact missing on command line")
+>       local_path = run.use_artifact(reference_artifact).file()
+[31m[1mconftest.py[39m[22m:28:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+[31m[1m/home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/sdk/wandb_run.py[39m[22m:370: in wrapper_fn
+    return func(self, *args, **kwargs)
+[31m[1m/home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/sdk/wandb_run.py[39m[22m:360: in wrapper
+    return func(self, *args, **kwargs)
+[31m[1m/home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/sdk/wandb_run.py[39m[22m:2731: in use_artifact
+    artifact = public_api.artifact(type=type, name=name)
+[31m[1m/home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/apis/normalize.py[39m[22m:87: in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+[31m[1m/home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/apis/normalize.py[39m[22m:41: in wrapper
+    return func(*args, **kwargs)
+[31m[1m/home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/apis/public.py[39m[22m:1040: in artifact
+    artifact = wandb.Artifact._from_name(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+cls = <class 'wandb.sdk.artifacts.artifact.Artifact'>, entity = 'prahyat'
+project = 'exercise_14', name = 'preprocessed_data.csv:latest'
+client = <wandb.apis.public.RetryingClient object at 0x7fa1bb85d450>
+    @classmethod
+    def _from_name(
+        cls, entity: str, project: str, name: str, client: RetryingClient
+    ) -> "Artifact":
+        query = gql(
+            """
+            query ArtifactByName(
+                $entityName: String!,
+                $projectName: String!,
+                $name: String!
+            ) {
+                project(name: $projectName, entityName: $entityName) {
+                    artifact(name: $name) {
+                        ...ArtifactFragment
+                    }
+                }
+            }
+            """
+            + cls._get_gql_artifact_fragment()
+        )
+        response = client.execute(
+            query,
+            variable_values={
+                "entityName": entity,
+                "projectName": project,
+                "name": name,
+            },
+        )
+        attrs = response.get("project", {}).get("artifact")
+        if attrs is None:
+>           raise ValueError(
+                f"Unable to fetch artifact with name {entity}/{project}/{name}"
+            )
+[31m[1mE           wandb.errors.CommError: Unable to fetch artifact with name prahyat/exercise_14/preprocessed_data.csv:latest
+[31m[1m/home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/sdk/artifacts/artifact.py[39m[22m:256: CommError
+[33m=============================== warnings summary ===============================
+../../../../../../../miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/sdk/launch/builder/build.py:11
+  /home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/lib/python3.11/site-packages/wandb/sdk/launch/builder/build.py:11: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+    import pkg_resources
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+[36m[1m=========================== short test summary info ============================
+[31mERROR[39m test_data.py::[1mtest_column_presence_and_type[22m - wandb.errors.CommError: Unable to fetch artifact with name prahyat/exercise...
+[31mERROR[39m test_data.py::[1mtest_class_names[22m - wandb.errors.CommError: Unable to fetch artifact with name prahyat/exercise...
+[31mERROR[39m test_data.py::[1mtest_column_ranges[22m - wandb.errors.CommError: Unable to fetch artifact with name prahyat/exercise...
+[31mERROR[39m test_data.py::[1mtest_kolmogorov_smirnov[22m - wandb.errors.CommError: Unable to fetch artifact with name prahyat/exercise...
+[31m========================= [33m1 warning[39m, [31m[1m4 errors[22m in 2.26s =========================

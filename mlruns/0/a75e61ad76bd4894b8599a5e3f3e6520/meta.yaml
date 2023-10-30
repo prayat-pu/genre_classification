@@ -1,0 +1,15 @@
+artifact_uri: file:///home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_%20Release_Deploy/exercise14/genre_classification/mlruns/0/a75e61ad76bd4894b8599a5e3f3e6520/artifacts
+end_time: 1698649691792
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a75e61ad76bd4894b8599a5e3f3e6520
+run_name: capable-wasp-472
+run_uuid: a75e61ad76bd4894b8599a5e3f3e6520
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698649668446
+status: 4
+tags: []
+user_id: prayat

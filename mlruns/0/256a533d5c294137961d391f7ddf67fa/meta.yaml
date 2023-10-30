@@ -1,0 +1,15 @@
+artifact_uri: file:///home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_%20Release_Deploy/exercise14/genre_classification/mlruns/0/256a533d5c294137961d391f7ddf67fa/artifacts
+end_time: 1698649151035
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 256a533d5c294137961d391f7ddf67fa
+run_name: treasured-mink-427
+run_uuid: 256a533d5c294137961d391f7ddf67fa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698649136195
+status: 4
+tags: []
+user_id: prayat

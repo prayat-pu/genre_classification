@@ -1,0 +1,15 @@
+artifact_uri: file:///home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_%20Release_Deploy/exercise14/genre_classification/mlruns/0/aba033b30d8542408fbe01db37425e1c/artifacts
+end_time: 1698650661356
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: aba033b30d8542408fbe01db37425e1c
+run_name: rogue-smelt-750
+run_uuid: aba033b30d8542408fbe01db37425e1c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698650621281
+status: 3
+tags: []
+user_id: prayat

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_%20Release_Deploy/exercise14/genre_classification/mlruns/0/2045bba7b03047288a52ca91a564011f/artifacts
+end_time: 1698649448782
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2045bba7b03047288a52ca91a564011f
+run_name: spiffy-swan-827
+run_uuid: 2045bba7b03047288a52ca91a564011f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698649431744
+status: 4
+tags: []
+user_id: prayat

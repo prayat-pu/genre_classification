@@ -1,0 +1,15 @@
+artifact_uri: file:///home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_%20Release_Deploy/exercise14/genre_classification/mlruns/0/b3f2acda57354b18b9ce168baa5a6c83/artifacts
+end_time: 1698647400748
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b3f2acda57354b18b9ce168baa5a6c83
+run_name: nebulous-chimp-970
+run_uuid: b3f2acda57354b18b9ce168baa5a6c83
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698647382779
+status: 3
+tags: []
+user_id: prayat

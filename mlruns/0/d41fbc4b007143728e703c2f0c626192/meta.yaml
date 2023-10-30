@@ -1,0 +1,15 @@
+artifact_uri: file:///home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_%20Release_Deploy/exercise14/genre_classification/mlruns/0/d41fbc4b007143728e703c2f0c626192/artifacts
+end_time: 1698649650954
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d41fbc4b007143728e703c2f0c626192
+run_name: delicate-colt-402
+run_uuid: d41fbc4b007143728e703c2f0c626192
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698649627573
+status: 3
+tags: []
+user_id: prayat

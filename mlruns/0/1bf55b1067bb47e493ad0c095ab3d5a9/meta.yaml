@@ -1,0 +1,15 @@
+artifact_uri: file:///home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_%20Release_Deploy/exercise14/genre_classification/mlruns/0/1bf55b1067bb47e493ad0c095ab3d5a9/artifacts
+end_time: 1698648672766
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1bf55b1067bb47e493ad0c095ab3d5a9
+run_name: delightful-snipe-38
+run_uuid: 1bf55b1067bb47e493ad0c095ab3d5a9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698648657660
+status: 4
+tags: []
+user_id: prayat

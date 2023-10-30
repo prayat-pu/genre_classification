@@ -1,0 +1,28 @@
+2023-10-30 14:07:13,983 INFO    MainThread:19063 [wandb_setup.py:_flush():76] Current SDK version is 0.15.12
+2023-10-30 14:07:13,983 INFO    MainThread:19063 [wandb_setup.py:_flush():76] Configure stats pid to 19063
+2023-10-30 14:07:13,983 INFO    MainThread:19063 [wandb_setup.py:_flush():76] Loading settings from /home/prayat/.config/wandb/settings
+2023-10-30 14:07:13,983 INFO    MainThread:19063 [wandb_setup.py:_flush():76] Loading settings from /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/check_data/wandb/settings
+2023-10-30 14:07:13,983 INFO    MainThread:19063 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'run_group': 'dev', 'project': 'exercise_14'}
+2023-10-30 14:07:13,983 INFO    MainThread:19063 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-10-30 14:07:13,983 WARNING MainThread:19063 [wandb_setup.py:_flush():76] Could not save program above cwd: /home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/bin/pytest
+2023-10-30 14:07:13,983 INFO    MainThread:19063 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': None, 'program_abspath': '/home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/bin/pytest', 'program': '/home/prayat/miniconda3/envs/mlflow-da4e209d9e0c57fad09ef195f5244bcce3a4669e/bin/pytest'}
+2023-10-30 14:07:13,983 INFO    MainThread:19063 [wandb_init.py:_log_setup():528] Logging user logs to /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/check_data/wandb/run-20231030_140713-gxctyaou/logs/debug.log
+2023-10-30 14:07:13,984 INFO    MainThread:19063 [wandb_init.py:_log_setup():529] Logging internal logs to /home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_ Release_Deploy/exercise14/genre_classification/check_data/wandb/run-20231030_140713-gxctyaou/logs/debug-internal.log
+2023-10-30 14:07:13,984 INFO    MainThread:19063 [wandb_init.py:init():568] calling init triggers
+2023-10-30 14:07:13,984 INFO    MainThread:19063 [wandb_init.py:init():575] wandb.init called with sweep_config: {}
+config: {}
+2023-10-30 14:07:13,984 INFO    MainThread:19063 [wandb_init.py:init():618] starting backend
+2023-10-30 14:07:13,984 INFO    MainThread:19063 [wandb_init.py:init():622] setting up manager
+2023-10-30 14:07:13,986 INFO    MainThread:19063 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-10-30 14:07:13,987 INFO    MainThread:19063 [wandb_init.py:init():628] backend started and connected
+2023-10-30 14:07:13,989 INFO    MainThread:19063 [wandb_init.py:init():720] updated telemetry
+2023-10-30 14:07:13,993 INFO    MainThread:19063 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2023-10-30 14:07:18,239 INFO    MainThread:19063 [wandb_run.py:_on_init():2220] communicating current version
+2023-10-30 14:07:18,363 INFO    MainThread:19063 [wandb_run.py:_on_init():2229] got version response 
+2023-10-30 14:07:18,363 INFO    MainThread:19063 [wandb_init.py:init():804] starting run threads in backend
+2023-10-30 14:07:19,678 INFO    MainThread:19063 [wandb_run.py:_console_start():2199] atexit reg
+2023-10-30 14:07:19,678 INFO    MainThread:19063 [wandb_run.py:_redirect():2054] redirect: wrap_raw
+2023-10-30 14:07:19,679 INFO    MainThread:19063 [wandb_run.py:_redirect():2119] Wrapping output streams.
+2023-10-30 14:07:19,679 INFO    MainThread:19063 [wandb_run.py:_redirect():2144] Redirects installed.
+2023-10-30 14:07:19,679 INFO    MainThread:19063 [wandb_init.py:init():845] run started, returning control to user process
+2023-10-30 14:07:29,408 WARNING MsgRouterThr:19063 [router.py:message_loop():77] message_loop has been closed

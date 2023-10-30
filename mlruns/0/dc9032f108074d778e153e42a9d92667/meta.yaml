@@ -1,0 +1,15 @@
+artifact_uri: file:///home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_%20Release_Deploy/exercise14/genre_classification/mlruns/0/dc9032f108074d778e153e42a9d92667/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: dc9032f108074d778e153e42a9d92667
+run_name: fun-cod-787
+run_uuid: dc9032f108074d778e153e42a9d92667
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698647150638
+status: 1
+tags: []
+user_id: prayat

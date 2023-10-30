@@ -1,0 +1,15 @@
+artifact_uri: file:///home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_%20Release_Deploy/exercise14/genre_classification/mlruns/0/8485165efcdb4fd099406f3452ce2c3d/artifacts
+end_time: 1698650447147
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8485165efcdb4fd099406f3452ce2c3d
+run_name: rumbling-snail-708
+run_uuid: 8485165efcdb4fd099406f3452ce2c3d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698650444441
+status: 4
+tags: []
+user_id: prayat

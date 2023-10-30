@@ -1,0 +1,15 @@
+artifact_uri: file:///home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_%20Release_Deploy/exercise14/genre_classification/mlruns/0/42319a8fedbe40f481c9397002c6a0b0/artifacts
+end_time: 1698649650788
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 42319a8fedbe40f481c9397002c6a0b0
+run_name: capable-conch-890
+run_uuid: 42319a8fedbe40f481c9397002c6a0b0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698649630230
+status: 3
+tags: []
+user_id: prayat

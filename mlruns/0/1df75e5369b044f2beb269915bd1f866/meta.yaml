@@ -1,0 +1,15 @@
+artifact_uri: file:///home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_%20Release_Deploy/exercise14/genre_classification/mlruns/0/1df75e5369b044f2beb269915bd1f866/artifacts
+end_time: 1698648014899
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1df75e5369b044f2beb269915bd1f866
+run_name: whimsical-slug-273
+run_uuid: 1df75e5369b044f2beb269915bd1f866
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698647999979
+status: 4
+tags: []
+user_id: prayat

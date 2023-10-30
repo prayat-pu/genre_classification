@@ -1,0 +1,15 @@
+artifact_uri: file:///home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_%20Release_Deploy/exercise14/genre_classification/mlruns/0/cebc9a7f7cc948ab8e2639f6161b17f3/artifacts
+end_time: 1698646293662
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: cebc9a7f7cc948ab8e2639f6161b17f3
+run_name: thoughtful-kite-618
+run_uuid: cebc9a7f7cc948ab8e2639f6161b17f3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698646276778
+status: 3
+tags: []
+user_id: prayat

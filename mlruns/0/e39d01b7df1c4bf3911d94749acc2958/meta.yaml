@@ -1,0 +1,15 @@
+artifact_uri: file:///home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_%20Release_Deploy/exercise14/genre_classification/mlruns/0/e39d01b7df1c4bf3911d94749acc2958/artifacts
+end_time: 1698646312106
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e39d01b7df1c4bf3911d94749acc2958
+run_name: mercurial-colt-131
+run_uuid: e39d01b7df1c4bf3911d94749acc2958
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698646293675
+status: 3
+tags: []
+user_id: prayat

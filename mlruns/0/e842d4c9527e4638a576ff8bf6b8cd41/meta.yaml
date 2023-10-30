@@ -1,0 +1,15 @@
+artifact_uri: file:///home/prayat/Desktop/Prayat_Udacity_exercises/chapter2/Final_Pipeline_%20Release_Deploy/exercise14/genre_classification/mlruns/0/e842d4c9527e4638a576ff8bf6b8cd41/artifacts
+end_time: 1698647821081
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e842d4c9527e4638a576ff8bf6b8cd41
+run_name: stylish-cub-412
+run_uuid: e842d4c9527e4638a576ff8bf6b8cd41
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698647803446
+status: 4
+tags: []
+user_id: prayat
